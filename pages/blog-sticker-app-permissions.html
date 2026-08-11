@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Our Sticker Apps Don't Ask for Your Contacts or Messages | SG Apps Tech Blog</title>
+<meta name="description" content="A look at what permissions a WhatsApp sticker app actually needs to work, and why SG Apps Tech apps don't request access to your contacts or messages.">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg-blur bg1"></div>
+<div class="bg-blur bg2"></div>
+
+<header>
+    <div class="container nav">
+        <div class="logo">
+            <img src="../img/logo.png" alt="SG Apps Tech logo">
+            SG Apps Tech
+        </div>
+
+<nav>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="apps.html" class="nav-link">Apps</a>
+    <a href="about_us.html" class="nav-link">About Us</a>
+    <a href="blog.html" class="nav-link active">Blog</a>
+    <a href="faq.html" class="nav-link">FAQ</a>
+    <a href="contact_us.html" class="nav-link">Contact Us</a>
+    <a href="support.html" class="nav-link">Support</a>
+    <a href="privacy_policy.html" class="nav-link">Privacy Policy</a>
+    <a href="terms_conditions.html" class="nav-link">Terms &amp; Conditions</a>
+</nav>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="app-page">
+<div class="container">
+
+<a href="blog.html" class="back-link">&larr; Back to Blog</a>
+
+<div class="glass section-box reveal visible">
+    <span class="blog-tag">Explainer</span>
+    <span class="blog-date">August 2026</span>
+    <h1>Why Our Sticker Apps Don't Ask for Your Contacts or Messages</h1>
+
+    <p>
+        One of the questions we hear most often, including in our
+        <a href="faq.html">FAQ</a>, is some version of "what does this app actually do with my
+        data?" It's a fair question, especially for an app that's free and ad-supported. Here's
+        the short version: a WhatsApp sticker app like ours only needs to do one thing — hand a
+        sticker image to WhatsApp when you tap "Add to WhatsApp." It doesn't need to read your
+        messages, see your contact list, or know who you're chatting with to do that.
+    </p>
+
+    <h2>How the sticker integration actually works</h2>
+    <p>
+        WhatsApp provides an official system for third-party sticker apps: your app packages a set
+        of images and hands them to WhatsApp through a defined interface, and WhatsApp takes it
+        from there. The sticker app itself never sees inside your chats — it's a one-way handoff
+        that ends the moment you tap "Add." Every app across our lineup, from
+        <a href="bubu-panda.html">Bubu Panda Stickers</a> to
+        <a href="animated-baby.html">Animated Baby Stickers</a>, uses this same official mechanism.
+    </p>
+
+    <h2>What permissions actually show up</h2>
+    <p>
+        If you check an app's permissions before installing, you'll typically see internet access,
+        which is used for loading ads and checking for updates, and basic storage access needed to
+        install the sticker pack itself. You won't see contacts, SMS, microphone, or camera
+        permissions requested, because none of our apps have a reason to use them.
+    </p>
+
+    <h2>What data actually gets collected</h2>
+    <p>
+        Our apps don't require creating an account, so there's no personal profile tied to your
+        usage. Some anonymous device information — the kind of thing that comes standard with
+        mobile advertising and analytics SDKs — is collected to serve and measure ads. It isn't
+        linked to your name, your messages, or your contacts. Full details, including which SDKs
+        are involved, are in our <a href="privacy_policy.html">Privacy Policy</a>.
+    </p>
+
+    <h2>Why we build this way</h2>
+    <p>
+        This isn't a one-off decision for a single app — it's the checklist every SG Apps Tech
+        release goes through before it ships, described in more detail on our
+        <a href="about_us.html">About Us</a> page. If you ever run into an app of ours asking for
+        something that seems unnecessary, we'd genuinely like to know — reach out through our
+        <a href="contact_us.html">Contact page</a>.
+    </p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="apps.html">Apps</a>
+    <a href="about_us.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="support.html">Support</a>
+    <a href="contact_us.html">Contact Us</a>
+    <a href="privacy_policy.html">Privacy Policy</a>
+    <a href="terms_conditions.html">Terms &amp; Conditions</a>
+</div>
+© 2026 SG Apps Tech. All Rights Reserved.
+</div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
